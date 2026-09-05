@@ -1,0 +1,1153 @@
+/* ==================================================
+   TECHNOVA
+   ORDER TRACKING
+================================================== */
+
+
+/* ==================================================
+   PAGE
+================================================== */
+
+.tracking-page {
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 45px 24px 80px;
+
+}
+
+
+/* ==================================================
+   TOP
+================================================== */
+
+.tracking-top {
+
+    margin-bottom: 25px;
+
+}
+
+
+.back-details {
+
+    color: #5b3cc4;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+
+}
+
+
+.back-details:hover {
+
+    color: #3f269c;
+
+}
+
+
+
+/* ==================================================
+   TRACKING HEADER
+================================================== */
+
+.tracking-header-card {
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 30px 34px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+
+    border: 1px solid #e8e8ee;
+
+    box-shadow:
+        0 15px 40px rgba(20, 20, 40, 0.07);
+
+    margin-bottom: 20px;
+
+}
+
+
+.tracking-header-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.tracking-icon {
+
+    width: 68px;
+
+    height: 68px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eee9ff,
+            #f5f2ff
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+}
+
+
+.tracking-label {
+
+    margin: 0 0 5px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #7357d8;
+
+}
+
+
+.tracking-header-card h1 {
+
+    margin: 0;
+
+    font-size: 32px;
+
+    color: #111827;
+
+}
+
+
+.tracking-order-number {
+
+    margin: 7px 0 0;
+
+    color: #7b8190;
+
+}
+
+
+.tracking-order-number strong {
+
+    color: #111827;
+
+}
+
+
+.tracking-status-badge {
+
+    padding: 11px 18px;
+
+    border-radius: 999px;
+
+    background: #eeeaff;
+
+    color: #6247d8;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+}
+
+
+
+/* ==================================================
+   DELIVERY ESTIMATE
+================================================== */
+
+.delivery-estimate {
+
+    background: #f8fbff;
+
+    border: 1px solid #dce8ff;
+
+    border-radius: 18px;
+
+    padding: 20px 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    margin-bottom: 24px;
+
+}
+
+
+.estimate-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 15px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+}
+
+
+.delivery-estimate span {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #7d8798;
+
+    margin-bottom: 4px;
+
+}
+
+
+.delivery-estimate strong {
+
+    display: block;
+
+    color: #111827;
+
+    font-size: 17px;
+
+}
+
+
+.delivery-estimate p {
+
+    margin: 4px 0 0;
+
+    color: #7d8798;
+
+    font-size: 13px;
+
+}
+
+
+
+/* ==================================================
+   TRACKING CARD
+================================================== */
+
+.tracking-card {
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 32px;
+
+    border: 1px solid #e8e8ee;
+
+    box-shadow:
+        0 15px 40px rgba(20, 20, 40, 0.06);
+
+    margin-bottom: 24px;
+
+}
+
+
+.tracking-card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.tracking-card-header p {
+
+    margin: 0 0 5px;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+    color: #7357d8;
+
+}
+
+
+.tracking-card-header h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    color: #111827;
+
+}
+
+
+#trackingProgressText {
+
+    font-size: 14px;
+
+    color: #7d8798;
+
+    font-weight: 700;
+
+}
+
+
+
+/* ==================================================
+   PROGRESS BAR
+================================================== */
+
+.tracking-progress {
+
+    height: 8px;
+
+    background: #edf0f5;
+
+    border-radius: 999px;
+
+    margin: 28px 0 35px;
+
+    overflow: hidden;
+
+}
+
+
+.tracking-progress-fill {
+
+    height: 100%;
+
+    width: 20%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #6b4ce6,
+            #8266f1
+        );
+
+    border-radius: inherit;
+
+    transition: width 0.5s ease;
+
+}
+
+
+
+/* ==================================================
+   TIMELINE
+================================================== */
+
+.tracking-timeline {
+
+    position: relative;
+
+}
+
+
+.tracking-step {
+
+    display: flex;
+
+    gap: 20px;
+
+    position: relative;
+
+    min-height: 95px;
+
+}
+
+
+.step-line {
+
+    width: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    position: relative;
+
+}
+
+
+.step-line::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 43px;
+
+    bottom: -12px;
+
+    width: 2px;
+
+    background: #e5e7eb;
+
+}
+
+
+.tracking-step:last-child
+.step-line::after {
+
+    display: none;
+
+}
+
+
+.step-circle {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #edf0f5;
+
+    color: #9aa1ad;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.tracking-step.completed
+.step-circle {
+
+    background:
+        linear-gradient(
+            135deg,
+            #6247d8,
+            #8368f2
+        );
+
+    color: white;
+
+    box-shadow:
+        0 5px 15px rgba(99, 75, 216, 0.25);
+
+}
+
+
+.tracking-step.completed
+.step-line::after {
+
+    background: #765be4;
+
+}
+
+
+.tracking-step.current
+.step-circle {
+
+    background: white;
+
+    border: 3px solid #6b4ce6;
+
+    color: #6b4ce6;
+
+    box-shadow:
+        0 0 0 6px #eeeaff;
+
+}
+
+
+.step-content {
+
+    padding-bottom: 25px;
+
+}
+
+
+.step-content h3 {
+
+    margin: 3px 0 5px;
+
+    font-size: 17px;
+
+    color: #111827;
+
+}
+
+
+.tracking-step:not(.completed):not(.current)
+.step-content h3 {
+
+    color: #9aa1ad;
+
+}
+
+
+.step-content p {
+
+    margin: 0 0 5px;
+
+    color: #747d8d;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+.step-content span {
+
+    font-size: 12px;
+
+    color: #9aa1ad;
+
+}
+
+
+
+/* ==================================================
+   ORDER INFORMATION
+================================================== */
+
+.tracking-info-card {
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    border: 1px solid #e8e8ee;
+
+    box-shadow:
+        0 15px 40px rgba(20, 20, 40, 0.06);
+
+    margin-bottom: 24px;
+
+}
+
+
+.tracking-info-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.info-header-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 15px;
+
+    background: #f1edff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+}
+
+
+.tracking-info-header p {
+
+    margin: 0 0 4px;
+
+    color: #7357d8;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+}
+
+
+.tracking-info-header h2 {
+
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 22px;
+
+}
+
+
+.tracking-info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.tracking-info-item {
+
+    padding: 17px;
+
+    background: #fafbfc;
+
+    border-radius: 14px;
+
+    border: 1px solid #edf0f4;
+
+}
+
+
+.tracking-info-item.full-width {
+
+    grid-column: 1 / -1;
+
+}
+
+
+.tracking-info-item span {
+
+    display: block;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    color: #9aa1ad;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+
+}
+
+
+.tracking-info-item strong {
+
+    display: block;
+
+    color: #18202f;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* ==================================================
+   ITEMS
+================================================== */
+
+.tracking-items-card {
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    border: 1px solid #e8e8ee;
+
+    box-shadow:
+        0 15px 40px rgba(20, 20, 40, 0.06);
+
+    margin-bottom: 28px;
+
+}
+
+
+.tracking-items-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+
+}
+
+
+.tracking-items-header p {
+
+    margin: 0 0 4px;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #7357d8;
+
+    font-weight: 800;
+
+}
+
+
+.tracking-items-header h2 {
+
+    margin: 0;
+
+    font-size: 22px;
+
+    color: #111827;
+
+}
+
+
+#trackingItemCount {
+
+    color: #7d8798;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.tracking-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 15px;
+
+    border: 1px solid #e9ecf1;
+
+    border-radius: 16px;
+
+    background: #fbfcfd;
+
+    margin-bottom: 12px;
+
+}
+
+
+.tracking-item:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.tracking-item-image {
+
+    width: 72px;
+
+    height: 72px;
+
+    border-radius: 12px;
+
+    background: white;
+
+    border: 1px solid #e2e5eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+}
+
+
+.tracking-item-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+}
+
+
+.tracking-item-info {
+
+    flex: 1;
+
+}
+
+
+.tracking-item-info h3 {
+
+    margin: 0 0 5px;
+
+    font-size: 15px;
+
+    color: #111827;
+
+}
+
+
+.tracking-item-info p {
+
+    margin: 0;
+
+    color: #8a92a0;
+
+    font-size: 13px;
+
+}
+
+
+.tracking-item-price {
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    color: #111827;
+
+}
+
+
+
+/* ==================================================
+   ACTIONS
+================================================== */
+
+.tracking-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.tracking-actions a {
+
+    text-decoration: none;
+
+    padding: 13px 20px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+
+}
+
+
+.tracking-back-btn {
+
+    background: white;
+
+    border: 1px solid #dfe3e9;
+
+    color: #555d6c;
+
+}
+
+
+.tracking-history-btn {
+
+    background: white;
+
+    border: 1px solid #dfe3e9;
+
+    color: #555d6c;
+
+}
+
+
+.tracking-shop-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #6349db,
+            #765bea
+        );
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px rgba(99, 73, 219, 0.2);
+
+}
+
+
+.tracking-actions a:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* ==================================================
+   NOT FOUND
+================================================== */
+
+.tracking-not-found {
+
+    max-width: 600px;
+
+    margin: 80px auto;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 24px;
+
+    border: 1px solid #e8e8ee;
+
+    box-shadow:
+        0 15px 40px rgba(20, 20, 40, 0.06);
+
+}
+
+
+.tracking-not-found-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.tracking-not-found h1 {
+
+    margin: 0 0 10px;
+
+    color: #111827;
+
+}
+
+
+.tracking-not-found p {
+
+    color: #7d8798;
+
+    margin-bottom: 25px;
+
+}
+
+
+.tracking-not-found a {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #654bdc;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 700px) {
+
+    .tracking-page {
+
+        padding:
+            25px 15px 60px;
+
+    }
+
+
+    .tracking-header-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .tracking-header-card h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .tracking-status-badge {
+
+        align-self: flex-start;
+
+    }
+
+
+    .tracking-card,
+    .tracking-info-card,
+    .tracking-items-card {
+
+        padding: 22px;
+
+    }
+
+
+    .tracking-info-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .tracking-info-item.full-width {
+
+        grid-column: auto;
+
+    }
+
+
+    .tracking-item {
+
+        align-items: flex-start;
+
+    }
+
+
+    .tracking-item-price {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+
+/* ==================================================
+   PRINT
+================================================== */
+
+@media print {
+
+    .navbar,
+    .tracking-top,
+    .tracking-actions {
+
+        display: none !important;
+
+    }
+
+
+    .tracking-page {
+
+        padding: 0;
+
+        max-width: none;
+
+    }
+
+
+    .tracking-card,
+    .tracking-info-card,
+    .tracking-items-card,
+    .tracking-header-card {
+
+        box-shadow: none;
+
+        border: 1px solid #ddd;
+
+    }
+
+}

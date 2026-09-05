@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Order Confirmed | TechNova Store</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="order-success.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     NAVBAR
+================================================== -->
+
+<header class="success-navbar">
+
+    <a
+        href="index.html"
+        class="success-logo"
+    >
+
+        <span class="logo-mark">
+            T
+        </span>
+
+        <span>
+            TechNova
+        </span>
+
+    </a>
+
+
+    <div class="success-nav-center">
+
+        <span class="nav-lock">
+            🔒
+        </span>
+
+        <span>
+            Secure Order Confirmation
+        </span>
+
+    </div>
+
+
+    <a
+        href="order-history.html"
+        class="history-link"
+    >
+        Order History
+    </a>
+
+</header>
+
+
+
+<!-- ==================================================
+     MAIN
+================================================== -->
+
+<main class="success-page">
+
+
+    <!-- ==================================================
+         SUCCESS HERO
+    ================================================== -->
+
+    <section class="success-hero">
+
+
+        <div class="success-icon">
+
+            <div class="success-check">
+                ✓
+            </div>
+
+        </div>
+
+
+        <span class="success-label">
+            ORDER CONFIRMED
+        </span>
+
+
+        <h1>
+            Thank You for Your Order!
+        </h1>
+
+
+        <p>
+            Your order has been successfully placed.
+            We've received your order and will start preparing
+            it shortly.
+        </p>
+
+
+        <!-- ORDER NUMBER -->
+
+        <div class="order-number-box">
+
+            <div>
+
+                <span>
+                    ORDER NUMBER
+                </span>
+
+                <strong id="orderId">
+                    TN-XXXXXXXX
+                </strong>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="copyOrderBtn"
+                class="copy-order-btn"
+                title="Copy order number"
+            >
+                📋
+            </button>
+
+        </div>
+
+
+        <div
+            id="copyMessage"
+            class="copy-message"
+        ></div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         ORDER TIMELINE
+    ================================================== -->
+
+    <section class="order-timeline">
+
+        <div class="timeline-item active">
+
+            <div class="timeline-circle">
+                ✓
+            </div>
+
+            <div>
+
+                <strong>
+                    Order Confirmed
+                </strong>
+
+                <span>
+                    We've received your order
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-line"></div>
+
+
+        <div class="timeline-item active">
+
+            <div class="timeline-circle">
+                2
+            </div>
+
+            <div>
+
+                <strong>
+                    Processing
+                </strong>
+
+                <span>
+                    We're preparing your items
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-line"></div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-circle">
+                3
+            </div>
+
+            <div>
+
+                <strong>
+                    Shipped
+                </strong>
+
+                <span>
+                    Your order is on its way
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-line"></div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-circle">
+                4
+            </div>
+
+            <div>
+
+                <strong>
+                    Delivered
+                </strong>
+
+                <span>
+                    Enjoy your new tech
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         ORDER CONTENT
+    ================================================== -->
+
+    <div class="success-grid">
+
+
+        <!-- ==================================================
+             LEFT
+        ================================================== -->
+
+        <div class="success-main">
+
+
+            <!-- ==================================================
+                 DELIVERY INFORMATION
+            ================================================== -->
+
+            <section class="success-card">
+
+                <div class="card-heading">
+
+                    <div class="heading-icon">
+                        📦
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Delivery Information
+                        </h2>
+
+                        <p>
+                            Your order will be delivered to:
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="customer-info-grid">
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            CUSTOMER
+                        </span>
+
+                        <strong id="customerName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            PHONE
+                        </span>
+
+                        <strong id="customerPhone">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item full">
+
+                        <span class="info-label">
+                            DELIVERY ADDRESS
+                        </span>
+
+                        <strong id="customerAddress">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            EMAIL
+                        </span>
+
+                        <strong id="customerEmail">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            DELIVERY METHOD
+                        </span>
+
+                        <strong>
+                            Standard Delivery
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="delivery-note">
+
+                    <span>
+                        🚚
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Estimated delivery
+                        </strong>
+
+                        <p>
+                            3–5 working days after your order
+                            has been processed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 PRODUCTS
+            ================================================== -->
+
+            <section class="success-card">
+
+                <div class="card-heading">
+
+                    <div class="heading-icon">
+                        🛒
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Items in Your Order
+                        </h2>
+
+                        <p id="itemCount">
+                            —
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="orderItems"
+                    class="order-items"
+                ></div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 PAYMENT
+            ================================================== -->
+
+            <section class="success-card payment-summary-card">
+
+                <div class="card-heading">
+
+                    <div class="heading-icon">
+                        💳
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Payment
+                        </h2>
+
+                        <p>
+                            Payment information
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="payment-info">
+
+                    <div>
+
+                        <span>
+                            PAYMENT METHOD
+                        </span>
+
+                        <strong id="paymentMethod">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            PAYMENT STATUS
+                        </span>
+
+                        <strong class="paid-status">
+                            ✓ Confirmed
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             RIGHT SUMMARY
+        ================================================== -->
+
+        <aside class="success-sidebar">
+
+
+            <div class="final-summary">
+
+
+                <div class="summary-header">
+
+                    <span>
+                        TECHNOVA STORE
+                    </span>
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+                </div>
+
+
+
+                <!-- SUMMARY ITEMS -->
+
+                <div
+                    id="summaryItems"
+                    class="summary-items"
+                ></div>
+
+
+
+                <div class="summary-divider"></div>
+
+
+
+                <!-- PRICE -->
+
+                <div class="summary-price-list">
+
+                    <div>
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="summarySubtotal">
+                            RM 0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Shipping
+                        </span>
+
+                        <strong class="free">
+                            FREE
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Discount
+                        </span>
+
+                        <strong
+                            id="summaryDiscount"
+                            class="discount"
+                        >
+                            - RM 0.00
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TOTAL -->
+
+                <div class="final-total">
+
+                    <div>
+
+                        <span>
+                            Total Paid
+                        </span>
+
+                        <small>
+                            Including shipping
+                        </small>
+
+                    </div>
+
+                    <strong id="summaryTotal">
+                        RM 0.00
+                    </strong>
+
+                </div>
+
+
+
+                <!-- CONFIRMATION -->
+
+                <div class="confirmation-box">
+
+                    <div class="confirmation-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Order successfully placed
+                        </strong>
+
+                        <p>
+                            Keep your order number for
+                            future reference.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         ACTIONS
+    ================================================== -->
+
+    <section class="success-actions">
+
+        <a
+            href="order-history.html"
+            class="secondary-action"
+        >
+
+            <span>
+                View Order History
+            </span>
+
+            <span>
+                →
+            </span>
+
+        </a>
+
+
+        <a
+            href="index.html"
+            class="primary-action"
+        >
+
+            <span>
+                Continue Shopping
+            </span>
+
+            <span>
+                →
+            </span>
+
+        </a>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FOOTER MESSAGE
+    ================================================== -->
+
+    <div class="success-footer-message">
+
+        <span>
+            💙
+        </span>
+
+        <p>
+            Thank you for choosing TechNova.
+            We hope you enjoy your new technology.
+        </p>
+
+    </div>
+
+</main>
+
+<script src="stock.js"></script>
+<script src="order-success.js"></script>
+
+</body>
+
+</html>

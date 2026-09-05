@@ -1,0 +1,1694 @@
+/* ==================================================
+   TECHNOVA PRODUCT DETAILS
+   PREMIUM PRODUCT DETAILS
+================================================== */
+
+.product-details-page {
+
+    padding: 45px 7% 90px;
+
+    background: #f7f8fc;
+
+    min-height:
+        calc(100vh - 75px);
+
+}
+
+
+/* ==================================================
+   TOP
+================================================== */
+
+.product-details-top {
+
+    margin-bottom: 30px;
+
+}
+
+
+.back-products {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    color: #666;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+.back-products:hover {
+
+    color: #6c5ce7;
+
+    transform:
+        translateX(-3px);
+
+}
+
+
+/* ==================================================
+   MAIN CONTAINER
+================================================== */
+
+.product-details-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 30px
+        rgba(0, 0, 0, 0.05);
+
+}
+
+
+/* ==================================================
+   IMAGE
+================================================== */
+
+.details-image-section {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.details-image-box {
+
+    width: 100%;
+
+    height: 500px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f7f8fa,
+            #eef0f4
+        );
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px;
+
+    overflow: hidden;
+
+}
+
+
+.details-image-box img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: 0.4s ease;
+
+}
+
+
+.details-image-box:hover img {
+
+    transform:
+        scale(1.05);
+
+}
+
+
+/* ==================================================
+   IMAGE ERROR
+================================================== */
+
+.details-image-error {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    color: #999;
+
+    font-size: 60px;
+
+}
+
+
+.details-image-error span {
+
+    font-size: 14px;
+
+    color: #aaa;
+
+}
+
+
+/* ==================================================
+   INFORMATION
+================================================== */
+
+.details-info {
+
+    padding: 15px 0;
+
+}
+
+
+.details-brand {
+
+    color: #6c5ce7;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+
+}
+
+
+.details-name {
+
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+
+    color: #222;
+
+}
+
+
+.details-rating {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+}
+
+
+.rating-text {
+
+    color: #888;
+
+    font-size: 13px;
+
+}
+
+
+.details-price {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: #6c5ce7;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* ==================================================
+   STOCK
+================================================== */
+
+.stock-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    background: #eefaf2;
+
+    color: #2e9d58;
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+}
+
+
+.stock-dot {
+
+    font-size: 10px;
+
+}
+
+
+/* ==================================================
+   DESCRIPTION
+================================================== */
+
+.details-description {
+
+    color: #777;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ==================================================
+   SPECIFICATIONS
+================================================== */
+
+.product-specifications {
+
+    border-top:
+        1px solid #eee;
+
+    border-bottom:
+        1px solid #eee;
+
+    padding: 18px 0;
+
+    margin-bottom: 25px;
+
+}
+
+
+.specification {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 8px 0;
+
+    font-size: 14px;
+
+}
+
+
+.specification span {
+
+    color: #888;
+
+}
+
+
+.specification strong {
+
+    color: #333;
+
+}
+
+
+.specification .available {
+
+    color: #2e9d58;
+
+}
+
+
+/* ==================================================
+   PRODUCT COLOR SECTION
+================================================== */
+
+.product-color-section {
+
+    margin-bottom: 25px;
+
+    padding: 18px;
+
+    border:
+        1px solid #ececf2;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fafaff
+        );
+
+}
+
+
+/* ==================================================
+   COLOR HEADER
+================================================== */
+
+.color-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 14px;
+
+}
+
+
+.color-label {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #222;
+
+}
+
+
+.selected-color-name {
+
+    color: #6c5ce7;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+/* ==================================================
+   COLOR OPTIONS
+================================================== */
+
+.color-options {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+
+/* ==================================================
+   COLOR BUTTON
+================================================== */
+
+.color-option {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    min-height: 40px;
+
+    padding:
+        7px 13px;
+
+    border:
+        1px solid #ddd;
+
+    background: white;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+
+    font-size: 13px;
+
+    color: #444;
+
+}
+
+
+.color-option:hover {
+
+    border-color:
+        #6c5ce7;
+
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 4px 12px
+        rgba(
+            108,
+            92,
+            231,
+            0.10
+        );
+
+}
+
+
+.color-option.selected {
+
+    border:
+        2px solid #6c5ce7;
+
+    background:
+        #f5f2ff;
+
+    color:
+        #4d3ac7;
+
+    box-shadow:
+        0 4px 14px
+        rgba(
+            108,
+            92,
+            231,
+            0.12
+        );
+
+}
+
+
+/* ==================================================
+   COLOR CIRCLE
+================================================== */
+
+.color-circle {
+
+    width: 22px;
+
+    height: 22px;
+
+    min-width: 22px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(
+            0,
+            0,
+            0,
+            0.16
+        );
+
+    box-shadow:
+        inset
+        0 0 0 1px
+        rgba(
+            255,
+            255,
+            255,
+            0.25
+        );
+
+}
+
+
+/* ==================================================
+   COLOR NAME
+================================================== */
+
+.color-name {
+
+    white-space: nowrap;
+
+}
+
+
+/* ==================================================
+   QUANTITY
+================================================== */
+
+.quantity-section {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+}
+
+
+.quantity-label {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+.details-quantity {
+
+    display: flex;
+
+    align-items: center;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+}
+
+
+.details-quantity button {
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: 0.2s;
+
+}
+
+
+.details-quantity button:hover {
+
+    background: #f1efff;
+
+    color: #6c5ce7;
+
+}
+
+
+.details-quantity span {
+
+    width: 45px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+
+
+/* ==================================================
+   ADD CART
+================================================== */
+
+.details-add-cart {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #6c5ce7;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        0.3s ease;
+
+}
+
+
+.details-add-cart:hover {
+
+    background: #5849d6;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(
+            108,
+            92,
+            231,
+            0.25
+        );
+
+}
+
+
+.details-add-cart:active {
+
+    transform:
+        translateY(0);
+
+}
+
+
+.details-add-cart.added {
+
+    background:
+        #2e9d58;
+
+}
+
+
+/* ==================================================
+   WISHLIST
+================================================== */
+
+.wishlist-btn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 10px;
+
+    border:
+        1px solid #ddd;
+
+    background: white;
+
+    color: #555;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.wishlist-btn:hover {
+
+    border-color:
+        #e74c3c;
+
+    color:
+        #e74c3c;
+
+}
+
+
+.wishlist-btn.active {
+
+    background:
+        #fff0f0;
+
+    border-color:
+        #e74c3c;
+
+    color:
+        #e74c3c;
+
+}
+
+
+/* ==================================================
+   CONTINUE SHOPPING
+================================================== */
+
+.continue-shopping-details {
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    text-decoration: none;
+
+    color: #777;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+
+}
+
+
+.continue-shopping-details:hover {
+
+    color: #6c5ce7;
+
+}
+
+
+/* ==================================================
+   DESCRIPTION CARD
+================================================== */
+
+.details-description-card {
+
+    max-width: 1200px;
+
+    margin:
+        30px auto 0;
+
+    background: white;
+
+    padding:
+        35px 40px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px
+        rgba(
+            0,
+            0,
+            0,
+            0.04
+        );
+
+}
+
+
+.details-description-card > p {
+
+    color: #6c5ce7;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.details-description-card h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.description-content {
+
+    border-top:
+        1px solid #eee;
+
+    padding-top: 18px;
+
+}
+
+
+.description-content p {
+
+    color: #777;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+
+}
+
+
+/* ==================================================
+   REVIEWS
+================================================== */
+
+.reviews-section {
+
+    max-width: 1200px;
+
+    margin:
+        50px auto 0;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 25px
+        rgba(
+            0,
+            0,
+            0,
+            0.05
+        );
+
+}
+
+
+.reviews-header {
+
+    margin-bottom: 30px;
+
+}
+
+
+.reviews-header > p {
+
+    color: #6c5ce7;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.reviews-header h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ==================================================
+   RATING SUMMARY
+================================================== */
+
+.rating-summary {
+
+    background:
+        #f7f8fc;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+}
+
+
+.average-rating {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.average-rating strong {
+
+    font-size: 35px;
+
+}
+
+
+.average-rating span {
+
+    color: #f5b301;
+
+    font-size: 20px;
+
+}
+
+
+.average-rating small {
+
+    color: #888;
+
+    font-size: 14px;
+
+}
+
+
+/* ==================================================
+   REVIEW FORM
+================================================== */
+
+.review-form-card {
+
+    padding: 25px;
+
+    background:
+        #f7f8fc;
+
+    border-radius: 14px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.review-form-card h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.rating-input {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.rating-input span {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* ==================================================
+   STAR RATING
+================================================== */
+
+.star-rating {
+
+    display: flex;
+
+    gap: 3px;
+
+}
+
+
+.star-rating button {
+
+    border: none;
+
+    background: transparent;
+
+    color: #ccc;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.star-rating button:hover {
+
+    color: #f5b301;
+
+}
+
+
+.star-rating button.active {
+
+    color: #f5b301;
+
+}
+
+
+/* ==================================================
+   REVIEW INPUT
+================================================== */
+
+.review-form-card input,
+.review-form-card textarea {
+
+    width: 100%;
+
+    border:
+        1px solid #ddd;
+
+    background: white;
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+}
+
+
+.review-form-card input:focus,
+.review-form-card textarea:focus {
+
+    border-color:
+        #6c5ce7;
+
+}
+
+
+.review-form-card textarea {
+
+    resize: vertical;
+
+}
+
+
+/* ==================================================
+   SUBMIT REVIEW
+================================================== */
+
+.submit-review-btn {
+
+    border: none;
+
+    background:
+        #6c5ce7;
+
+    color: white;
+
+    padding:
+        12px 22px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.submit-review-btn:hover {
+
+    background:
+        #5849d6;
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* ==================================================
+   REVIEW ERROR
+================================================== */
+
+.review-error {
+
+    display: none;
+
+    margin-top: 12px;
+
+    padding:
+        10px 12px;
+
+    background:
+        #fff0f0;
+
+    color:
+        #e74c3c;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+}
+
+
+.review-error.show {
+
+    display: block;
+
+}
+
+
+/* ==================================================
+   REVIEW ITEM
+================================================== */
+
+.review-item {
+
+    padding:
+        20px 0;
+
+    border-bottom:
+        1px solid #eee;
+
+}
+
+
+.review-item:last-child {
+
+    border-bottom:
+        none;
+
+}
+
+
+.review-top {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    margin-bottom: 8px;
+
+}
+
+
+.reviewer-name {
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+}
+
+
+.review-date {
+
+    color: #999;
+
+    font-size: 12px;
+
+}
+
+
+.review-stars {
+
+    color: #f5b301;
+
+    font-size: 16px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.review-text {
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+/* ==================================================
+   NO REVIEWS
+================================================== */
+
+.no-reviews {
+
+    text-align: center;
+
+    padding: 40px;
+
+    color: #999;
+
+}
+
+
+.no-reviews > div {
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.no-reviews h3 {
+
+    color: #555;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* ==================================================
+   PRODUCT NOT FOUND
+================================================== */
+
+.product-not-found {
+
+    display: none;
+
+    max-width: 600px;
+
+    margin: 80px auto;
+
+    background: white;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px
+        rgba(
+            0,
+            0,
+            0,
+            0.05
+        );
+
+}
+
+
+.product-not-found > div {
+
+    font-size: 70px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.product-not-found h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.product-not-found p {
+
+    color: #888;
+
+    margin-bottom: 25px;
+
+}
+
+
+.product-not-found a {
+
+    display: inline-block;
+
+    padding:
+        12px 22px;
+
+    background:
+        #6c5ce7;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 900px) {
+
+    .product-details-container {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 35px;
+
+        padding: 30px;
+
+    }
+
+
+    .details-image-box {
+
+        height: 400px;
+
+    }
+
+
+    .details-name {
+
+        font-size: 36px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .product-details-page {
+
+        padding:
+            30px 5% 60px;
+
+    }
+
+
+    .product-details-container {
+
+        padding: 20px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .details-image-box {
+
+        height: 300px;
+
+        padding: 25px;
+
+    }
+
+
+    .details-name {
+
+        font-size: 30px;
+
+    }
+
+
+    .details-price {
+
+        font-size: 27px;
+
+    }
+
+
+    .details-description-card {
+
+        padding:
+            25px 20px;
+
+    }
+
+
+    .reviews-section {
+
+        padding:
+            25px 20px;
+
+    }
+
+
+    .quantity-section {
+
+        align-items: center;
+
+    }
+
+
+    .color-header {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap: 5px;
+
+    }
+
+
+    .color-options {
+
+        gap: 8px;
+
+    }
+
+
+    .color-option {
+
+        padding:
+            7px 10px;
+
+    }
+
+
+    .review-top {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap: 5px;
+
+    }
+
+
+    .rating-input {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap: 5px;
+
+    }
+
+}
+
+/* ==================================================
+   PRODUCT COLOR - INLINE LAYOUT
+================================================== */
+
+.product-color-section {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.color-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.color-title {
+    color: #111827;
+    font-size: 13px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.selected-color-name {
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.color-options {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 4px;
+}
+
+.color-options button {
+    min-width: 70px;
+    height: 34px;
+    padding: 0 12px;
+
+    border: 1px solid #d9dee7;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #374151;
+
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.color-options button:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+    background: #eff6ff;
+    transform: translateY(-1px);
+}
+
+.color-options button.selected,
+.color-options button.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+.stock-status{
+
+    margin:15px 0;
+
+    color:#16a34a;
+
+    font-weight:600;
+
+}
+
+
+.stock-dot{
+
+    font-size:18px;
+
+}
+
+
+.stock-status.out-stock{
+
+    color:#dc2626;
+
+}
+
+
+.details-add-cart:disabled{
+
+    background:#999;
+
+    cursor:not-allowed;
+
+}
+
+/* ======================================================
+   TECHNOVA STOCK STATUS
+   ====================================================== */
+
+.stock-status.low-stock {
+
+    color: #d97706;
+
+}
+
+
+.stock-status.out-stock {
+
+    color: #dc2626;
+
+}
+
+
+.stock-status:not(.low-stock):not(.out-stock) {
+
+    color: #16a34a;
+
+}

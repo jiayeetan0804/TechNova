@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TechNova Store | Technology Made Simple</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     ANNOUNCEMENT BAR
+================================================== -->
+
+<div class="announcement-bar">
+
+    <div class="announcement-content">
+
+        <span>
+            🚚 Free Shipping
+        </span>
+
+        <span class="announcement-divider">
+            |
+        </span>
+
+        <span>
+            On Orders Over RM300
+        </span>
+
+        <span class="announcement-divider">
+            |
+        </span>
+
+        <span>
+            🔒 Secure Payment
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header class="site-header">
+
+
+    <!-- ==================================================
+         MAIN NAVBAR
+    ================================================== -->
+
+    <div class="navbar">
+
+
+        <!-- ==================================================
+             LOGO
+        ================================================== -->
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <span class="logo-computer">
+                💻
+            </span>
+
+            <span class="logo-store-name">
+                TechNova Store
+            </span>
+
+        </a>
+
+
+        <!-- ==================================================
+             NAVIGATION
+        ================================================== -->
+
+        <nav class="main-nav">
+
+            <a
+                href="index.html"
+                class="nav-link active"
+            >
+                Home
+            </a>
+
+            <a
+                href="#categories"
+                class="nav-link"
+            >
+                Categories
+            </a>
+
+            <a
+                href="#products"
+                class="nav-link"
+            >
+                Products
+            </a>
+
+            <a
+                href="wishlist.html"
+                class="nav-link"
+            >
+                Wishlist
+            </a>
+
+            <a
+                href="order-history.html"
+                class="nav-link"
+            >
+                Orders
+            </a>
+
+        </nav>
+
+
+        <!-- ==================================================
+             RIGHT NAVIGATION
+        ================================================== -->
+
+        <div class="nav-actions">
+
+    <!-- DARK MODE -->
+
+    <button
+        id="themeToggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Toggle Dark Mode"
+    >
+        🌙
+    </button>
+
+
+    <!-- USER -->
+
+    <div
+        class="user-area"
+        id="userArea"
+    >
+
+        <a
+            href="login.html"
+            class="login-link"
+        >
+
+            <span class="user-icon">
+                👤
+            </span>
+
+            Login
+
+        </a>
+
+    </div>
+
+            <!-- ==================================================
+                 CART
+            ================================================== -->
+
+            <button
+                id="cartButton"
+                class="cart-button"
+                type="button"
+                aria-label="Shopping Cart"
+            >
+
+                <span class="cart-icon">
+                    🛒
+                </span>
+
+                <span
+                    id="cartCount"
+                    class="cart-count"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ==================================================
+         SEARCH BAR
+    ================================================== -->
+
+    <div class="search-row">
+
+        <div class="search-container">
+
+
+            <div class="search-icon">
+                🔍
+            </div>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search laptops, monitors, keyboards, routers..."
+                autocomplete="off"
+            >
+
+
+            <button
+                id="searchBtn"
+                class="search-button"
+                type="button"
+            >
+
+                Search
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+</header>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<main>
+
+
+<section class="hero-section">
+
+
+    <div class="hero-content">
+
+
+        <div class="hero-label">
+
+            <span class="hero-dot"></span>
+
+            YOUR TRUSTED IT STORE
+
+        </div>
+
+
+        <h1>
+
+            Technology
+
+            <br>
+
+            <span>Made Simple.</span>
+
+        </h1>
+
+
+        <p>
+
+            Discover laptops, monitors, networking devices
+            and everyday tech essentials from trusted brands.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+
+            <button
+                class="primary-btn"
+                onclick="scrollToProducts()"
+            >
+
+                Shop Products
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+            <a
+                href="#categories"
+                class="secondary-btn"
+            >
+
+                Explore Categories
+
+            </a>
+
+
+        </div>
+
+
+        <!-- ==================================================
+             HERO FEATURES
+        ================================================== -->
+
+        <div class="hero-features">
+
+
+            <div class="hero-feature">
+
+                <span class="feature-icon">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        Genuine Products
+                    </strong>
+
+                    <small>
+                        Trusted brands
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-feature">
+
+                <span class="feature-icon">
+                    ⚡
+                </span>
+
+                <div>
+
+                    <strong>
+                        Fast Delivery
+                    </strong>
+
+                    <small>
+                        Quick & reliable
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-feature">
+
+                <span class="feature-icon">
+                    🔒
+                </span>
+
+                <div>
+
+                    <strong>
+                        Secure Payment
+                    </strong>
+
+                    <small>
+                        Safe checkout
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ==================================================
+         HERO PRODUCT
+    ================================================== -->
+
+    <div class="hero-visual">
+
+
+        <div class="hero-circle circle-one"></div>
+
+        <div class="hero-circle circle-two"></div>
+
+
+        <div class="hero-card-back">
+
+            <span>
+                TECH
+            </span>
+
+        </div>
+
+
+        <div class="hero-product-card">
+
+
+            <div class="hero-product-badge">
+
+                FEATURED
+
+            </div>
+
+
+            <img
+                src="images/acer-aspire-lite-15.jpg"
+                alt="Acer Aspire Lite 15"
+                onerror="handleImageError(this)"
+            >
+
+
+            <div class="hero-product-info">
+
+                <span>
+                    ACER
+                </span>
+
+                <strong>
+                    Aspire Lite 15
+                </strong>
+
+                <div>
+
+                    <b>
+                        RM 2,299
+                    </b>
+
+                    <small>
+                        Laptop
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="floating-card floating-top">
+
+            <span class="floating-icon">
+                💻
+            </span>
+
+            <div>
+
+                <strong>
+                    17+
+                </strong>
+
+                <small>
+                    Tech Products
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="floating-card floating-bottom">
+
+            <span class="floating-icon">
+                ⭐
+            </span>
+
+            <div>
+
+                <strong>
+                    Quality
+                </strong>
+
+                <small>
+                    Trusted Brands
+                </small>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- ==================================================
+     CATEGORY SECTION
+================================================== -->
+
+<section
+    class="category-section"
+    id="categories"
+>
+
+
+    <div class="section-heading centered">
+
+        <span class="section-eyebrow">
+            SHOP BY CATEGORY
+        </span>
+
+        <h2>
+            Find What You Need
+        </h2>
+
+        <p>
+            Explore our range of technology products
+            for work, study and everyday use.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+
+        <button
+            class="category-card category-btn active"
+            data-category="All"
+        >
+
+            <span class="category-icon">
+                ✨
+            </span>
+
+            <strong>
+                All Products
+            </strong>
+
+            <small>
+                View everything
+            </small>
+
+        </button>
+
+
+        <button
+            class="category-card category-btn"
+            data-category="Laptop"
+        >
+
+            <span class="category-icon">
+                💻
+            </span>
+
+            <strong>
+                Laptops
+            </strong>
+
+            <small>
+                Work & study
+            </small>
+
+        </button>
+
+
+        <button
+            class="category-card category-btn"
+            data-category="Monitor"
+        >
+
+            <span class="category-icon">
+                🖥️
+            </span>
+
+            <strong>
+                Monitors
+            </strong>
+
+            <small>
+                Clear displays
+            </small>
+
+        </button>
+
+
+        <button
+            class="category-card category-btn"
+            data-category="Mouse"
+        >
+
+            <span class="category-icon">
+                🖱️
+            </span>
+
+            <strong>
+                Mouse
+            </strong>
+
+            <small>
+                Precision control
+            </small>
+
+        </button>
+
+
+        <button
+            class="category-card category-btn"
+            data-category="Keyboard"
+        >
+
+            <span class="category-icon">
+                ⌨️
+            </span>
+
+            <strong>
+                Keyboards
+            </strong>
+
+            <small>
+                Type better
+            </small>
+
+        </button>
+
+
+        <button
+            class="category-card category-btn"
+            data-category="Printer"
+        >
+
+            <span class="category-icon">
+                🖨️
+            </span>
+
+            <strong>
+                Printers
+            </strong>
+
+            <small>
+                Home & office
+            </small>
+
+        </button>
+
+
+        <button
+            class="category-card category-btn"
+            data-category="Router"
+        >
+
+            <span class="category-icon">
+                🌐
+            </span>
+
+            <strong>
+                Routers
+            </strong>
+
+            <small>
+                Faster networks
+            </small>
+
+        </button>
+
+
+        <button
+            class="category-card category-btn"
+            data-category="Network"
+        >
+
+            <span class="category-icon">
+                🔌
+            </span>
+
+            <strong>
+                Network
+            </strong>
+
+            <small>
+                Connectivity
+            </small>
+
+        </button>
+
+
+    </div>
+
+
+</section>
+
+<!-- ==================================================
+     PRODUCTS
+================================================== -->
+
+<section
+    class="products-section"
+    id="products"
+>
+
+
+    <div class="products-header">
+
+
+        <div class="section-heading">
+
+            <span class="section-eyebrow">
+                OUR PRODUCTS
+            </span>
+
+            <h2>
+                Popular Tech Essentials
+            </h2>
+
+            <p>
+                Quality products from brands you know.
+            </p>
+
+        </div>
+
+
+        <!-- SORT -->
+
+        <div class="sort-area">
+
+            <label for="sortSelect">
+                Sort By
+            </label>
+
+            <select id="sortSelect">
+
+                <option value="default">
+                    Default
+                </option>
+
+                <option value="name-asc">
+                    Name A → Z
+                </option>
+
+                <option value="name-desc">
+                    Name Z → A
+                </option>
+
+                <option value="price-low">
+                    Price: Low → High
+                </option>
+
+                <option value="price-high">
+                    Price: High → Low
+                </option>
+
+            </select>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="products-toolbar">
+
+        <span
+            id="productCount"
+            class="product-count"
+        >
+
+            17 Products
+
+        </span>
+
+        <span class="toolbar-text">
+
+            Click a product to view details
+
+        </span>
+
+    </div>
+
+
+    <!-- PRODUCTS GRID -->
+
+    <div
+        class="products-grid"
+        id="productsGrid"
+    >
+    </div>
+
+
+    <!-- NO PRODUCTS -->
+
+    <div
+        class="no-products"
+        id="noProducts"
+    >
+
+        <div class="no-products-icon">
+            🔍
+        </div>
+
+        <h3>
+            No Products Found
+        </h3>
+
+        <p>
+            Try another search or category.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+<!-- ==================================================
+     TRUST SECTION
+================================================== -->
+
+<section class="trust-section">
+
+
+    <div class="trust-item">
+
+        <div class="trust-icon">
+            🚚
+        </div>
+
+        <div>
+
+            <strong>
+                Fast Delivery
+            </strong>
+
+            <span>
+                Reliable shipping
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <div class="trust-icon">
+            🛡️
+        </div>
+
+        <div>
+
+            <strong>
+                Quality Products
+            </strong>
+
+            <span>
+                Trusted brands
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <div class="trust-icon">
+            🔒
+        </div>
+
+        <div>
+
+            <strong>
+                Secure Checkout
+            </strong>
+
+            <span>
+                Safe payment
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <div class="trust-icon">
+            💬
+        </div>
+
+        <div>
+
+            <strong>
+                Customer Support
+            </strong>
+
+            <span>
+                We're here to help
+            </span>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+<!-- ==================================================
+     SHOPPING CART OVERLAY
+================================================== -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+></div>
+
+
+<!-- ==================================================
+     SHOPPING CART SIDEBAR
+================================================== -->
+
+<aside
+    class="cart-sidebar"
+    id="cartSidebar"
+>
+
+
+    <div class="cart-header">
+
+        <div>
+
+            <span class="cart-header-label">
+                YOUR SHOPPING CART
+            </span>
+
+            <h2>
+                My Cart
+            </h2>
+
+        </div>
+
+
+        <button
+            id="closeCart"
+            class="close-cart"
+            type="button"
+        >
+
+            ✕
+
+        </button>
+
+    </div>
+
+
+    <!-- CART ITEMS -->
+
+    <div
+        class="cart-items"
+        id="cartItems"
+    >
+    </div>
+
+
+    <!-- EMPTY CART -->
+
+    <div
+        class="empty-cart"
+        id="emptyCart"
+    >
+
+        <div class="empty-cart-icon">
+            🛒
+        </div>
+
+        <h3>
+            Your cart is empty
+        </h3>
+
+        <p>
+            Add some products to get started.
+        </p>
+
+        <button
+            class="continue-shopping"
+            onclick="closeShoppingCart()"
+        >
+
+            Continue Shopping
+
+        </button>
+
+    </div>
+
+
+    <!-- CART BOTTOM -->
+
+    <div
+        class="cart-bottom"
+        id="cartBottom"
+    >
+
+
+        <div class="cart-summary-row">
+
+            <span>
+                Subtotal
+            </span>
+
+            <strong id="cartSubtotal">
+                RM 0.00
+            </strong>
+
+        </div>
+
+
+        <div class="cart-summary-row">
+
+            <span>
+                Shipping
+            </span>
+
+            <strong>
+                FREE
+            </strong>
+
+        </div>
+
+
+        <div class="cart-total-row">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                RM 0.00
+            </strong>
+
+        </div>
+
+
+        <button
+            id="checkoutBtn"
+            class="checkout-btn"
+            type="button"
+        >
+
+            Proceed to Checkout
+
+            <span>
+                →
+            </span>
+
+        </button>
+
+
+        <button
+            id="clearCartBtn"
+            class="clear-cart-btn"
+            type="button"
+        >
+
+            Clear Shopping Cart
+
+        </button>
+
+
+    </div>
+
+
+</aside>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+
+        <!-- ==================================================
+             BRAND
+        ================================================== -->
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="footer-logo"
+            >
+
+                <span class="footer-computer-icon">
+                    💻
+                </span>
+
+                <span class="footer-store-name">
+                    TechNova Store
+                </span>
+
+            </a>
+
+
+            <p>
+
+                Your trusted destination for laptops,
+                monitors, networking devices and everyday
+                technology essentials.
+
+            </p>
+
+
+            <div class="footer-social">
+
+                <span>
+                    f
+                </span>
+
+                <span>
+                    ◎
+                </span>
+
+                <span>
+                    in
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             SHOP
+        ================================================== -->
+
+        <div class="footer-column">
+
+            <h3>
+                Shop
+            </h3>
+
+            <a href="#products">
+                All Products
+            </a>
+
+            <a href="#categories">
+                Categories
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+        </div>
+
+
+        <!-- ==================================================
+             CUSTOMER
+        ================================================== -->
+
+        <div class="footer-column">
+
+            <h3>
+                Customer
+            </h3>
+
+            <a href="order-history.html">
+                Order History
+            </a>
+
+            <a href="login.html">
+                My Account
+            </a>
+
+            <a href="#">
+                Track Order
+            </a>
+
+            <a href="#">
+                Help Centre
+            </a>
+
+        </div>
+
+
+        <!-- ==================================================
+             CONTACT
+        ================================================== -->
+
+        <div class="footer-column contact-column">
+
+            <h3>
+                Contact
+            </h3>
+
+
+            <div class="footer-contact-item">
+
+                <span class="footer-contact-icon">
+                    📍
+                </span>
+
+                <span>
+                    Malaysia
+                </span>
+
+            </div>
+
+
+            <div class="footer-contact-item">
+
+                <span class="footer-contact-icon">
+                    ✉
+                </span>
+
+                <span>
+                    support@technova.com
+                </span>
+
+            </div>
+
+
+            <div class="footer-contact-item">
+
+                <span class="footer-contact-icon">
+                    ☎
+                </span>
+
+                <span>
+                    +60 3-1234 5678
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ==================================================
+         FOOTER BOTTOM
+    ================================================== -->
+
+    <div class="footer-bottom">
+
+
+        <div class="footer-bottom-left">
+
+            <span>
+                © 2026 TechNova Store.
+            </span>
+
+            <span>
+                All rights reserved.
+            </span>
+
+        </div>
+
+
+        <div class="footer-bottom-links">
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+<!-- ==================================================
+     MAIN JAVASCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+<script src="login.js"></script>
+
+
+</body>
+
+</html>

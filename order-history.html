@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order History - TechNova</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="order-history.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================
+ NAVBAR
+========================== -->
+
+<header class="navbar">
+
+
+<div class="logo">
+🛍️ TechNova
+</div>
+
+
+<nav>
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="index.html#products">
+Products
+</a>
+
+
+<a href="index.html#about">
+About
+</a>
+
+
+</nav>
+
+
+
+<div class="nav-actions">
+
+
+<div id="userArea"></div>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+<!-- ==========================
+ ORDER HISTORY
+========================== -->
+
+
+<main class="order-history-page">
+
+
+
+<section class="history-header">
+
+
+<div>
+
+<h1>
+My Order History
+</h1>
+
+
+<p>
+View and track all your orders in one place.
+</p>
+
+</div>
+
+
+<div class="history-icon">
+
+📦
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ==========================
+ SUMMARY
+========================== -->
+
+
+<section class="order-summary-box">
+
+
+
+<div class="summary-card">
+
+
+<div class="summary-icon blue">
+🛍️
+</div>
+
+
+<div>
+
+<span>
+Total Orders
+</span>
+
+
+<strong id="totalOrders">
+0
+</strong>
+
+
+<p>
+All time orders
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="summary-card">
+
+
+<div class="summary-icon green">
+✓
+</div>
+
+
+<div>
+
+<span>
+Completed
+</span>
+
+
+<strong id="completedOrders">
+0
+</strong>
+
+
+<p>
+Orders delivered
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="summary-card">
+
+
+<div class="summary-icon orange">
+⏳
+</div>
+
+
+<div>
+
+<span>
+Processing
+</span>
+
+
+<strong id="processingOrders">
+0
+</strong>
+
+
+<p>
+Orders in progress
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="summary-card">
+
+
+<div class="summary-icon purple">
+💰
+</div>
+
+
+<div>
+
+<span>
+Total Spent
+</span>
+
+
+<strong id="totalSpent">
+RM 0.00
+</strong>
+
+
+<p>
+All time spending
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<!-- ==========================
+ FILTER
+========================== -->
+
+
+<section class="order-filter">
+
+
+<select id="orderFilter">
+
+<option value="all">
+All Orders
+</option>
+
+
+<option value="Delivered">
+Delivered
+</option>
+
+
+<option value="Processing">
+Processing
+</option>
+
+
+<option value="Cancelled">
+Cancelled
+</option>
+
+
+</select>
+
+
+
+
+<input
+type="text"
+id="orderSearch"
+placeholder="Search by order ID..."
+>
+
+
+</section>
+
+
+
+
+
+
+<!-- ==========================
+ ORDER LIST
+========================== -->
+
+
+<section
+id="orderList"
+class="order-list"
+>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+<script src="login.js"></script>
+
+<script src="order-history.js"></script>
+
+
+
+</body>
+
+
+</html>
